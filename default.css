@@ -1,0 +1,392 @@
+/*General structure*/
+html {
+	box-sizing: border-box;
+	position: static;
+}
+
+*{
+	margin:0;
+	padding:0;
+
+}
+
+*,*:before, *:after {
+	box-sizing:inherit;
+}
+
+
+body {
+	margin: 0;
+	color: #222;
+	font-family:  Manrope;
+}
+
+/*End General Structure*/
+	    
+/*main divs*/
+#page {
+	min-height:100%;
+	width:100%;
+	background:#19568b;
+}	
+#page > div{
+	display:block;
+}
+.navi {
+	text-align: center;
+	background-color: rgb(25,86,139);
+	padding: 0;
+	top:0;
+	width: 100%;
+	left:0;
+	right:0;
+	vertical-align:bottom;
+	border-bottom:3px solid rgb(255,0,71);	
+}
+
+.navi a:active{
+	color:black;
+}
+
+.navi a:hover{
+	animation:hover .5s;
+	color:#ff0047;
+}
+
+.navi a{
+	display: inline-block;
+	font-size: 16px;
+	color:black;
+	text-decoration:none;
+	padding: 12px 30px;
+	bottom: 0;
+}
+
+
+.main{	
+	
+}
+.center-display{
+	padding-top:90px;
+	margin: auto;
+	position:relative;
+	text-align:center;
+	background-size: 100%;
+	background-repeat:no-repeat;
+}
+.center-display-text{
+	font: helvetica;
+	height: 50%;
+}
+
+.center-display h3{
+	text-align:left;
+	border-bottom:3px solid rgb(255,0,71);	
+}
+
+.banner{
+	font-family: Manrope;
+	font-size: 80px;
+	padding-top: 50px;
+	bottom:0;
+}
+
+.contact{
+	text-align: center;
+	padding: 120px;
+	font-size: 96px;
+	text-align: center;
+	margin: auto;
+	
+}
+
+.contact i{
+	margin: auto;
+	padding: auto;
+	text-align:center;
+	width: 47%;
+	color:black;
+}
+
+.footer{
+	color:white;
+	background:black;
+	text-align:center;
+	text-decoration:none;
+	font-size:14px;
+	padding: 5px 0;
+}
+
+/*End Main divs*/
+
+/*sub containers and text*/
+
+h2{
+	font-weight:700;
+}
+
+h3{
+	text-align:right;
+	font-style: italic;
+}
+
+.navi-menu-dropdown div{
+	width: 25px;
+	height: 4px;
+	background-color: black;
+	margin: 5px 0;
+}
+
+.logo{
+	padding: none;
+}
+
+#links{
+	float: center;
+	padding-top:20px;
+	width:100%;
+	bottom:0;
+	text-align:center;
+	height:inherit;
+}
+#links a{
+	margin:auto;
+	width:24%;
+	height:100%;
+}
+
+#links a:hover{
+	color:#ff0047;
+	transition: .2s;
+}
+
+#links a:active{
+}
+
+.sub-box-container{
+	padding: 0 0%;	
+}
+.sub-box-row{
+	margin: auto;
+	display: block;
+	text-align:center;
+	overflow:hidden;
+	align-items:center;
+	color: black;
+}
+
+.sub-box-dropdown {
+	height: 0;
+}
+
+.sub-box-content{
+	margin: auto;
+}
+
+.sub-box-dropdown ~ .sub-box-text :hover{
+	animation: text-drop;
+}
+
+.sub-box-header{
+	padding-top:10px;
+	text-align:left;
+	margin: auto;
+	color:white;
+}
+.sub-box-text{
+	background-color:white;
+	padding: 20px;
+	text-align:left;
+	color: black;
+	height: 256px;
+}
+
+.sub-box-third{
+	display:block;
+	background-color:#01122b;
+	margin:auto;
+	margin-top:5%;
+	margin-bottom:5%;
+}
+
+.download-button{
+	background-color: rgb(25,86,139);
+  	color: black;
+  	padding: 10px 28px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+  	margin: 4px 2px;
+  	cursor: pointer;
+}
+
+.download-button:hover{
+	background-color: rgb(61,141,222);
+}
+
+.about{
+}
+
+.about *{
+	color:black;
+	background-color:white;
+	padding: 5px 5% 5px 5%;
+}
+.about h2{
+	text-decoration: underline;
+
+}
+.about p{
+	padding: 5px 5% 5% 5%;
+}
+
+.big{
+	font-size: 80px;
+	margin-bottom:320px;
+}
+
+/*end sub containers and text*/
+
+
+/*Media Queries*/
+
+/*desktop*/
+@media screen and (min-width: 760px){
+	#navi-menu-dropdown{
+		display:none;
+	}
+	
+	#page > div{
+		width:100%;
+		margin:auto;
+	}
+	.navi{
+		padding-top: 10px;
+	}
+	.sub-box-third{
+		display: block;
+		width: 75%;
+	}	
+}
+
+
+/*phone Screen*/
+@media screen and (max-width: 760px){
+	
+	*{
+		margin:0;
+		padding:0;
+	}
+	#page{
+		margin:0;
+		bottom:0;
+	}
+	#page > div{
+		padding:0;
+		margin:0;
+	}
+	
+	.navi{
+		padding:0;
+	}
+	.navi #links{
+		display: none;
+	}
+	
+	.navi-menu-dropdown {
+		display: block;
+		float:right;
+	}
+	
+	#links a{
+		width:100%;
+	}
+	
+	#header{
+		margin-top:50px;
+	}
+	
+	.navi.responsive {
+		position: relative;
+		margin:0;
+	}
+	
+	.navi.responsive #links{
+		display: block;
+		left:0;
+		right:0;
+		width: 100%;
+	}
+	
+	.navi-logo img{
+		display: inline;
+		vertical-align:center;
+		max-height:25px;
+		min-height: 20px;
+	}
+	
+	.sub-box-row{
+		width:100%;
+		margin:0;
+		display:block;
+	}
+	
+	.sub-box-third{
+		width:100%;
+		margin:0;
+		border: 0;
+		border-bottom:3px solid rgb(255,0,71);
+	}
+	.center-display{
+		margin-top:50px;
+		padding:0;
+	}
+	.about{
+		padding: 0 5px;
+		background-color:white;
+	}
+}
+
+/*end phone screen*/
+
+/*animation*/
+
+@keyframes slideshow-in {
+	from {left:-100%;}
+	to {left:0;}
+}
+
+@keyframes slideshow-out {
+	from {left:0;}
+	to {left:100%;}
+}
+
+@keyframes text-drop{
+	from {height:0;}
+	to {height:100%;}
+}
+/*end animation*/
+
+/*End media queries*/
+
+/* Fonts*/
+@font-face {
+    font-family: 'Pricedown Bl';
+    src: url('PricedownBl-Regular.woff2') format('woff2'),
+        url('PricedownBl-Regular.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('Manrope-SemiBold.woff2') format('woff2'),
+        url('Manrope-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+/*End fonts*/
