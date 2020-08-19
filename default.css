@@ -1,5 +1,6 @@
 /*General structure*/
 html {
+	color: #F6ECF9;
 	box-sizing: border-box;
 	position: static;
 }
@@ -7,67 +8,60 @@ html {
 *{
 	margin:0;
 	padding:0;
-
 }
 
 *,*:before, *:after {
-	box-sizing:inherit;
+	box-sizing: inherit;
 }
 
 
 body {
 	margin: 0;
-	color: #222;
 	font-family:  Manrope;
 }
 
 /*End General Structure*/
-	    
+
 /*main divs*/
 #page {
 	min-height:100%;
 	width:100%;
-	background:#19568b;
+	background:  #141414;
 }	
 #page > div{
 	display:block;
 }
 .navi {
 	text-align: center;
-	background-color: rgb(25,86,139);
+	background-color: black;
 	padding: 0;
 	top:0;
 	width: 100%;
 	left:0;
 	right:0;
 	vertical-align:bottom;
-	border-bottom:3px solid rgb(255,0,71);	
-}
-
-.navi a:active{
-	color:black;
+	display: inline-block;
 }
 
 .navi a:hover{
-	animation:hover .5s;
-	color:#ff0047;
+	color: #FF0047;
+	transition: .2s;
 }
 
 .navi a{
-	display: inline-block;
+	color: #F6ECF9;
 	font-size: 16px;
-	color:black;
 	text-decoration:none;
-	padding: 12px 30px;
 	bottom: 0;
+	display: inline-block;
 }
 
 
 .main{	
+
 	
 }
 .center-display{
-	padding-top:90px;
 	margin: auto;
 	position:relative;
 	text-align:center;
@@ -81,36 +75,38 @@ body {
 
 .center-display h3{
 	text-align:left;
-	border-bottom:3px solid rgb(255,0,71);	
+	border-bottom:3px solid #FF0047;
 }
 
 .banner{
 	font-family: Manrope;
 	font-size: 80px;
-	padding-top: 50px;
-	bottom:0;
+	padding: 50px 0  50px 0;
 }
 
 .contact{
 	text-align: center;
 	padding: 120px;
-	font-size: 96px;
+	font-size: 52px;
 	text-align: center;
 	margin: auto;
-	
 }
 
 .contact i{
+	color: #F6ECF9;
 	margin: auto;
 	padding: auto;
 	text-align:center;
 	width: 47%;
-	color:black;
 }
 
+.contact i:hover{
+	color: #FF0047;
+	transition: .2s;
+}
 .footer{
-	color:white;
-	background:black;
+	background-color: black;
+	color:#F6ECF9;
 	text-align:center;
 	text-decoration:none;
 	font-size:14px;
@@ -121,6 +117,12 @@ body {
 
 /*sub containers and text*/
 
+.main h2{
+	padding:10px;
+	margin:0;
+	font-family: 'Pricedown Bl';
+	font-size: 32px;
+}
 h2{
 	font-weight:700;
 }
@@ -130,37 +132,59 @@ h3{
 	font-style: italic;
 }
 
+.navi-menu-dropdown{
+	padding-right:10px;
+}
+
 .navi-menu-dropdown div{
 	width: 25px;
 	height: 4px;
-	background-color: black;
+	background-color: #FF0047;
 	margin: 5px 0;
 }
 
-.logo{
-	padding: none;
+.logo {
+	width: 25%;
+	left: 0;
+	position: relative;
 }
 
+.logo div {
+	display: inline;
+	font-family: 'Pricedown Bl';	
+	padding: none;
+	font-size: 32px;
+}
+
+
 #links{
-	float: center;
-	padding-top:20px;
-	width:100%;
+	right: 0;
+	width:75%;
 	bottom:0;
 	text-align:center;
 	height:inherit;
+	position: relative;
+	display: inline-block;
 }
+
 #links a{
 	margin:auto;
-	width:24%;
+	padding-top: 10px;
+	width:32%;
 	height:100%;
 }
 
 #links a:hover{
-	color:#ff0047;
+	color: #FF0047;
 	transition: .2s;
 }
 
 #links a:active{
+
+}
+
+.ham-button {
+ 	background-color: #FF0047;
 }
 
 .sub-box-container{
@@ -191,10 +215,10 @@ h3{
 	padding-top:10px;
 	text-align:left;
 	margin: auto;
-	color:white;
+	color:#F6ECF9;
 }
 .sub-box-text{
-	background-color:white;
+	background-color:#F6ECF9;
 	padding: 20px;
 	text-align:left;
 	color: black;
@@ -203,15 +227,16 @@ h3{
 
 .sub-box-third{
 	display:block;
-	background-color:#01122b;
+	background-color:#3e3e3e;
 	margin:auto;
 	margin-top:5%;
 	margin-bottom:5%;
+	max-width: 500px;
 }
 
 .download-button{
-	background-color: rgb(25,86,139);
-  	color: black;
+	background-color: inherit;
+  	color: #FF0047;
   	padding: 10px 28px;
   	text-align: center;
   	text-decoration: none;
@@ -219,10 +244,15 @@ h3{
   	font-size: 16px;
   	margin: 4px 2px;
   	cursor: pointer;
+	border: solid 1px #FF0047;
+	border-radius: 3px;
 }
 
 .download-button:hover{
-	background-color: rgb(61,141,222);
+	background-color: #FF0047;
+	color: #F6ECF9;
+	transition: .2s;
+
 }
 
 .about{
@@ -230,7 +260,7 @@ h3{
 
 .about *{
 	color:black;
-	background-color:white;
+	background-color:#F6ECF9;
 	padding: 5px 5% 5px 5%;
 }
 .about h2{
@@ -329,14 +359,16 @@ h3{
 	.sub-box-row{
 		width:100%;
 		margin:0;
+		padding-top: 10px;
 		display:block;
 	}
 	
 	.sub-box-third{
 		width:100%;
+		max-width:100%;
 		margin:0;
 		border: 0;
-		border-bottom:3px solid rgb(255,0,71);
+		padding-top: 10px;
 	}
 	.center-display{
 		margin-top:50px;
@@ -344,12 +376,18 @@ h3{
 	}
 	.about{
 		padding: 0 5px;
-		background-color:white;
 	}
 }
 
 /*end phone screen*/
 
+
+/* colors 
+
+red = rgb(255,0,71);
+neon purple =#D600FF
+
+ End colors*/
 /*animation*/
 
 @keyframes slideshow-in {
@@ -362,12 +400,6 @@ h3{
 	to {left:100%;}
 }
 
-@keyframes text-drop{
-	from {height:0;}
-	to {height:100%;}
-}
-/*end animation*/
-
 /*End media queries*/
 
 /* Fonts*/
@@ -375,7 +407,7 @@ h3{
     font-family: 'Pricedown Bl';
     src: url('PricedownBl-Regular.woff2') format('woff2'),
         url('PricedownBl-Regular.woff') format('woff');
-    font-weight: 900;
+    font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
